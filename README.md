@@ -119,3 +119,11 @@ To expand the system using MEF:
 3. **Deploy Plugins**
    - Place the compiled plugin DLL in the designated plugins folder recognized by the UI which is `$(SolutionDir)/bin/Debug` or `$(SolutionDir)/bin/Release`.
    - Restart the application; MEF will discover and load the new plugin automatically.
+  
+4. **Sample Implementation**
+   - PhaseOneExtension is a library that is added after the entire code is deployed. If manually deploying this project, copy the dll to where the application is installed and scanning. Restart the application
+     - It only contains example of additional workloads
+       - Company : Adidas , States : California, Texas and Utah
+       - Company : Walmart, States : Texas, Florida and Ohio
+ - When the appliaction is run, it will detect this additional dll and load it and with it the above workflows will be available
+ - To test further, go to the deployment location, manually delete this dll and restart the application. It will revert to the original options
