@@ -1,8 +1,8 @@
-# MEF-Enabled Payroll Management Mock Demo
+# MEF Enabled Post release Scalability of Operations Demo
 
 ## Introduction
 
-This project demonstrates the use of the Managed Extensibility Framework (MEF) in a payroll management system. It showcases how MEF can be leveraged to create a modular, extensible architecture for processing payroll operations, making it easy to add new features and components without modifying the core system.
+This project demonstrates the use of the Managed Extensibility Framework (MEF) in a production environment. It showcases how MEF can be leveraged to create a modular, extensible architecture for processing payroll operations, making it easy to add new features and components without modifying the core system.
 
 ## Table of Contents
 
