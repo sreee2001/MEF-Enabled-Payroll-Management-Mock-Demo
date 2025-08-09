@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{987408B2-E83A-43F9-BD14-2E2ED2D21CF8}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>ConsoleDemo</RootNamespace>
-    <AssemblyName>ConsoleDemo</AssemblyName>
+    <ProjectGuid>{A6446A4E-5A2F-4295-9411-59055EEFA5AC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Models</RootNamespace>
+    <AssemblyName>Models</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,24 +32,21 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConsolePayrollProcessing.cs" />
-    <Compile Include="Project.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="System.ComponentModel.Composition" />
+    <Compile Include="BusinessObjects\PayrollRegistration.cs" />
+    <Compile Include="Entities\Company.cs" />
+    <Compile Include="Entities\State.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Interfaces\Interfaces.csproj">
-      <Project>{610155f5-312c-435a-9a13-336f004f6129}</Project>
+      <Project>{610155F5-312C-435A-9A13-336F004F6129}</Project>
       <Name>Interfaces</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PayrollProcessor\PayrollProcessor.csproj">
-      <Project>{4CA11085-BF46-42CE-BDED-80C92FD7386F}</Project>
-      <Name>PayrollProcessor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
